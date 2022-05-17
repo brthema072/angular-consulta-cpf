@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { ButtonSimpleComponent } from './shared/components/button-simple/button-simple.component';
 import { ButtonSelectComponent } from './shared/components/button-select/button-select.component';
 import { AlsHeaderComponent } from './modules/als-header/als-header.component';
+import { AlsMenuComponent } from './modules/als-menu/als-menu.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AlsHeaderComponent,
     ButtonSimpleComponent,
-    ButtonSelectComponent
+    ButtonSelectComponent,
+    AlsMenuComponent
   ],
   imports: [
     BrowserModule,

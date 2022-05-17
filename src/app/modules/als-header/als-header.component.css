@@ -1,19 +1,17 @@
 
 .container {
     display: block;
-    /* padding: 0;
-    margin: 0; */
 }
 
 .column {
     display: flex;
     flex-direction: column;
-    width: 100vw;
 }
 
 .row {
     display: flex;
     flex-direction: row;
+    width: 100vw;
 }
 
 .textHedaer {
@@ -21,8 +19,8 @@
 }
 
 .actionsHeader {
-    justify-content: center;
-    align-items: flex-end;
+    justify-content: end;
+    align-items: center;
 }
 
 .container .textHedaer .title {
@@ -45,7 +43,7 @@
     margin: 0;
 }
 
-.actionsHeader .container {
+.actionsHeader .container-row {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -56,11 +54,12 @@
     align-items: center;
 }
 
-.material-icons {
+.icon-notifications {
     color: #125D79;
     margin-right: 15px;
 }
 
-.profile-photo {
+.icon-profile {
+    color: #125D79;
     margin-left: 15px;
 }

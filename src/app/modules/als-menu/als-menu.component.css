@@ -1,0 +1,22 @@
+.container {
+    width: 85px;
+    height: 1024px;
+    background-color: #165C7D;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.image-logo {
+    margin-top: 19px;   
+    width: 60px;
+    height: 60px;
+}
+
+.material-symbols-outlined {
+    width: 25px;
+    height: 25px;
+    color: white;
+    margin-top: 35px;
+}
