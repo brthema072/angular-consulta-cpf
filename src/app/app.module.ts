@@ -3,10 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ButtonSimpleComponent } from './shared/components/button-simple/button-simple.component';
+import { ButtonSelectComponent } from './shared/components/button-select/button-select.component';
+import { AlsHeaderComponent } from './modules/als-header/als-header.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AlsHeaderComponent,
+    ButtonSimpleComponent,
+    ButtonSelectComponent
   ],
   imports: [
     BrowserModule,

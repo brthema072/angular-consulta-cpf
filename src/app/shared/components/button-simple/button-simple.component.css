@@ -1,0 +1,38 @@
+.container {
+    border: 1px solid #125D79;
+    border-radius: 15px;
+    width: 134px;
+    height: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    background-color: white;
+    transition: all 0.6s;
+}
+
+.text {
+    font-family: Exo2Bold;
+    font-size: 14px;
+    color: #125D79;
+    transition: all 0.6s;
+}
+
+.material-icons {
+    color: #125D79;
+    font-size: 15pt;
+    transition: all 0.6s;
+}
+
+.container:hover {
+    background-color: #165C7D;
+}
+
+.container:hover .text {
+    color: white;
+}
+
+.container:hover .material-icons {
+    color: white;
+}

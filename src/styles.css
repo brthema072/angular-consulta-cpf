@@ -1,1 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'Exo2Bold';
+    src: url('assets/fonts/Exo2-Bold.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: 'OpenSansRegular';
+    src: url('assets/fonts/OpenSans-Regular.ttf') format('opentype');
+}
