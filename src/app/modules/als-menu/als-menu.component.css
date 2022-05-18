@@ -1,11 +1,14 @@
 .container {
-    width: 85px;
+    width: var(--menuSize);
     height: 1024px;
     background-color: #165C7D;
     display: flex;
     flex-direction: column;
     justify-content: start;
-    align-items: center;
+    align-items: var(--alignItens);
+    overflow-x: hidden;
+    transition: all 0.6s;
+    padding: var(--paddingMenuItens);
 }
 
 .image-logo {
@@ -19,4 +22,5 @@
     height: 25px;
     color: white;
     margin-top: 35px;
+    cursor: pointer;
 }

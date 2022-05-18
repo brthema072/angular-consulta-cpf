@@ -1,29 +1,13 @@
-
 .container {
-    display: block;
-}
-
-.column {
     display: flex;
-    flex-direction: column;
-}
-
-.row {
-    display: flex;
-    flex-direction: row;
-    width: 100vw;
-}
-
-.textHedaer {
-    justify-content: start;
-}
-
-.actionsHeader {
-    justify-content: end;
+    justify-content: space-between;
     align-items: center;
+    padding: 30px;
+    height: 70px;
+    width: var(--headerWith);
 }
 
-.container .textHedaer .title {
+.container .title {
     font-family: Exo2Bold;
     font-size: 24px;
     color: #101213;
@@ -33,7 +17,7 @@
     margin: 0;
 }
 
-.container .textHedaer .subtitle {
+.container .subtitle {
     font-family: OpenSansRegular;
     font-size: 12px;
     color: #787878;
@@ -43,16 +27,6 @@
     margin: 0;
 }
 
-.actionsHeader .container-row {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.actions {
-    display: flex;
-    align-items: center;
-}
 
 .icon-notifications {
     color: #125D79;
@@ -62,4 +36,12 @@
 .icon-profile {
     color: #125D79;
     margin-left: 15px;
+}
+
+.header-actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    float: right;
 }
