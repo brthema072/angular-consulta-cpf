@@ -1,15 +1,18 @@
-.container {
+.fixed-container {
     display: flex;
     height: 0px;
 }
 
-.als-body {
+als-header {
+    width: 100%;
+}
+
+.dynamic-container {
     display: flex;
     position: relative;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #101213;
-    /* width: 100vw;
-    height: 100vh; */
+    margin: 80px 0 0 var(--menuSize);
+    background-color: #e6eef1;
 }

@@ -7,6 +7,7 @@ import { ButtonSimpleComponent } from './shared/components/button-simple/button-
 import { ButtonSelectComponent } from './shared/components/button-select/button-select.component';
 import { AlsHeaderComponent } from './modules/als-header/als-header.component';
 import { AlsMenuComponent } from './modules/als-menu/als-menu.component';
+import { AlsValidateCpfComponent } from './modules/als-validate-cpf/als-validate-cpf.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { AlsMenuComponent } from './modules/als-menu/als-menu.component';
     AlsHeaderComponent,
     ButtonSimpleComponent,
     ButtonSelectComponent,
-    AlsMenuComponent
+    AlsMenuComponent,
+    AlsValidateCpfComponent
   ],
   imports: [
     BrowserModule,
