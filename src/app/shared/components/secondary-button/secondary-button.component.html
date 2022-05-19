@@ -1,6 +1,6 @@
 <div class="container">
     <span class="text">{{ text }}</span>
-    <span class="material-icons">
-        arrow_drop_down
+    <span class="material-icons" *ngIf="icon">
+        {{ icon }}
     </span>
 </div>

@@ -6,9 +6,10 @@
 
     <form action="">
         <label for="cpf">CPF</label>
-        <div>
+        <div class="input-row">
             <input type="text" placeholder="000.000.000-00" mask="000.000.000-00">
-            <button>Consultar CPF</button>
+            <!-- <button>Consultar CPF</button> -->
+            <als-primary-button text="Consultar por CPF" (clicked)="clicked()"></als-primary-button>
         </div>
     </form>
 </div>

@@ -12,4 +12,8 @@ export class AlsValidateCpfComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  clicked() {
+    console.log("ola")
+  }
+
 }

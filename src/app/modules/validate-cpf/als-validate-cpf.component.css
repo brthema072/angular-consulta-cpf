@@ -53,3 +53,12 @@ input {
 button {
     margin-left: 15px;
 }
+
+.input-row {
+    display: flex;
+    flex-direction: row;
+}
+
+als-primary-button {
+    margin-left: 20px;
+}
