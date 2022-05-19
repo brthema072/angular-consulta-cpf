@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-als-validate-cpf',
+  selector: 'als-validate-cpf',
   templateUrl: './als-validate-cpf.component.html',
   styleUrls: ['./als-validate-cpf.component.css']
 })
