@@ -33,11 +33,21 @@ label {
     font-family: OpenSansRegular;
     font-size: 24px;
     color: #040F14;
-    margin: 20px 0 15px 0;
+    margin: 20px 0 6px 0;
+    font-weight: 600;
+    font-size: 14px;
 }
 
 input {
+    font-family: OpenSansRegular;
     margin: 0 0 15px 0;
+    color: #040F14;
+    font-weight: 400;
+    font-size: 14px;
+    border: 1px solid #889499;
+    border-radius: 2px;
+    width: 295px;
+    height: 30px;
 }
 
 button {

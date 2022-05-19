@@ -11,5 +11,5 @@ als-header {
     position: relative;
     margin: 80px 0 0 var(--menuSize);
     background-color: #e6eef1;
-    /* height: 80vh; */
+    height: 80vh;
 }
