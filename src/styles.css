@@ -7,3 +7,8 @@
     font-family: 'OpenSansRegular';
     src: url('assets/fonts/OpenSans-Regular.ttf') format('opentype');
 }
+
+body {
+    padding: 0;
+    margin: 0;
+}
