@@ -4,11 +4,16 @@
         <br>Digite apenas os números (sem pontos ou traços).
     </p>
 
-    <form action="">
+    <form [formGroup]="form">
         <label for="cpf">CPF</label>
         <div class="input-row">
-            <input type="text" placeholder="000.000.000-00" mask="000.000.000-00">
-            <!-- <button>Consultar CPF</button> -->
+            <div class="input-section">
+                <input type="text" [class]="!validCpf ? 'required-input' : ''"
+                    formControlName="cpf" placeholder="000.000.000-00" mask="000.000.000-00">
+                <small class="erroDeValidacao" *ngIf="!validCpf">
+                    CPF inválido
+                </small>
+            </div>
             <als-primary-button text="Consultar por CPF" (clicked)="clicked()"></als-primary-button>
         </div>
     </form>

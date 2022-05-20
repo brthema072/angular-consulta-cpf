@@ -9,6 +9,7 @@ import { AlsMenuComponent } from './modules/menu/als-menu.component';
 import { AlsValidateCpfComponent } from './modules/validate-cpf/als-validate-cpf.component';
 import { NgxMaskModule } from 'ngx-mask';
 import { PrimaryButtonComponent } from './shared/components/primary-button/primary-button.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { PrimaryButtonComponent } from './shared/components/primary-button/prima
     BrowserModule,
     AppRoutingModule,
     NgxMaskModule.forRoot(),
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
