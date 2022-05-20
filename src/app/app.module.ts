@@ -10,6 +10,7 @@ import { AlsValidateCpfComponent } from './modules/validate-cpf/als-validate-cpf
 import { NgxMaskModule } from 'ngx-mask';
 import { PrimaryButtonComponent } from './shared/components/primary-button/primary-button.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { TimelineComponent } from './shared/components/timeline/timeline.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     SecondaryButtonComponent,
     AlsMenuComponent,
     AlsValidateCpfComponent,
-    PrimaryButtonComponent
+    PrimaryButtonComponent,
+    TimelineComponent
   ],
   imports: [
     BrowserModule,
