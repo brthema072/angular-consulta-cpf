@@ -1,8 +1,10 @@
 <div class="footer-container">
     <als-primary-button
+        *ngIf="cpfValid"
         text="Inicar nova admissão"
         width="187"
-        height="40">
+        height="40"
+        (clicked)="newIssue()">
     </als-primary-button>
 
     <als-secondary-button

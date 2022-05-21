@@ -13,6 +13,10 @@ const routes: Routes = [
     component: ValidateCpfComponent
   },
   {
+    path: 'validate-cpf/:cpf',
+    component: ValidateCpfComponent
+  },
+  {
     path: '**',
     component: ValidateCpfComponent
   }

@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
+import { NavigationStart, Router } from '@angular/router';
 import { CpfValidation } from 'src/app/base/configurations/cpf-validation';
 import { Person } from 'src/app/base/models/person';
 import data from 'src/app/data.json'
@@ -18,11 +19,12 @@ export class ValidateCpfComponent implements OnInit {
 
   person: Person = new Person();
 
-  constructor(public validatio: CpfValidation) { }
+  constructor(public validatio: CpfValidation, private router: Router) { }
 
   ngOnInit(): void {
     this.initializeForm()
     this.onChanges()
+    this.validateUrl()
   }
 
   initializeForm() {
@@ -42,7 +44,13 @@ export class ValidateCpfComponent implements OnInit {
     } else if(this.person == undefined && this.form.invalid){
       this.modal.setMessage("Informe um CPF válido")
       this.modal.toggle()
+    }else{
+      this.addParamInRoute()
     }
+  }
+
+  addParamInRoute(){
+    this.router.navigate(['/validate-cpf', { cpf: this.form.value.cpf }])
   }
 
   removeMask(cpfNumber: string):string {
@@ -101,4 +109,16 @@ export class ValidateCpfComponent implements OnInit {
     }
   }
 
+  // Observa se existe o parâmetro CPF na url, se não existir, limpa a model person,
+  // parando de mostrar as informações da pessoa com CPF válido
+  validateUrl(){
+    this.router.events.subscribe((event: any) => {
+      if(event instanceof NavigationStart){
+        if(event.url.search("cpf=") < 0){
+          this.person = null
+          this.form.reset()
+        }
+      }
+    });
+  }
 }
