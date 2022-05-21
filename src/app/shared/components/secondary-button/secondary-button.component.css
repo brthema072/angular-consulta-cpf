@@ -1,8 +1,5 @@
 .container {
     border: 1px solid #125D79;
-    border-radius: 15px;
-    width: 134px;
-    height: 32px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -12,16 +9,15 @@
     transition: all 0.6s;
 }
 
+.rounded {
+    border-radius: 15px;
+}
+
 .text {
     font-family: Exo2Bold;
     font-size: 14px;
+    font-weight: 600;
     color: #125D79;
-    transition: all 0.6s;
-}
-
-.material-icons {
-    color: #125D79;
-    font-size: 15pt;
     transition: all 0.6s;
 }
 
@@ -30,9 +26,5 @@
 }
 
 .container:hover .text {
-    color: white;
-}
-
-.container:hover .material-icons {
     color: white;
 }

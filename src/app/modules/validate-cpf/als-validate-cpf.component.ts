@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { CpfValidation } from 'src/app/configurations/cpf-validation';
+import data from 'src/app/data.json'
 
 @Component({
   selector: 'als-validate-cpf',
@@ -25,9 +26,12 @@ export class AlsValidateCpfComponent implements OnInit {
   }
 
   clicked() {
-    console.log(this.form.value)
+    let person = data.filter((d) => this.removeMask(d.cpf) == this.form.value.cpf)
   }
 
+  removeMask(cpfNumber: string):string {
+    return cpfNumber.replace(/\D/g,'')
+  }
   
   onChanges(){
     this.form.valueChanges.subscribe((val) => {

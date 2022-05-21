@@ -11,6 +11,7 @@ import { NgxMaskModule } from 'ngx-mask';
 import { PrimaryButtonComponent } from './shared/components/primary-button/primary-button.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { TimelineComponent } from './shared/components/timeline/timeline.component';
+import { FooterComponent } from './modules/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { TimelineComponent } from './shared/components/timeline/timeline.compone
     AlsMenuComponent,
     AlsValidateCpfComponent,
     PrimaryButtonComponent,
-    TimelineComponent
+    TimelineComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

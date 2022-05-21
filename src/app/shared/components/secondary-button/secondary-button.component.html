@@ -1,6 +1,3 @@
-<div class="container">
+<div [ngClass]="{ 'container': true, 'rounded': rounded }" [ngStyle]="dimensoes">
     <span class="text">{{ text }}</span>
-    <span class="material-icons" *ngIf="icon">
-        {{ icon }}
-    </span>
 </div>

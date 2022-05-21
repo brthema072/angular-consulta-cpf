@@ -13,3 +13,7 @@ als-header {
     background-color: #e6eef1;
     height: 80vh;
 }
+
+.footer {
+    margin: 15px 0 0 var(--menuSize);
+}
