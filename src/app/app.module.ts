@@ -12,6 +12,7 @@ import { PrimaryButtonComponent } from './shared/components/primary-button/prima
 import { ReactiveFormsModule } from '@angular/forms';
 import { TimelineComponent } from './shared/components/timeline/timeline.component';
 import { FooterComponent } from './modules/footer/footer.component';
+import { ShowInformationComponent } from './modules/show-information/show-information.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FooterComponent } from './modules/footer/footer.component';
     AlsValidateCpfComponent,
     PrimaryButtonComponent,
     TimelineComponent,
-    FooterComponent
+    FooterComponent,
+    ShowInformationComponent
   ],
   imports: [
     BrowserModule,
