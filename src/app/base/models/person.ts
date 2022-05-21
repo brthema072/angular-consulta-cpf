@@ -7,5 +7,6 @@ export class Person {
     checkingAccount: string;
 
     constructor(){
+        this.id = 0;
     }
 }

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Person } from 'src/app/base/models/person';
 
 @Component({
   selector: 'als-information',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./information.component.css']
 })
 export class InformationComponent implements OnInit {
+
+  @Input() person: Person = new Person();
 
   constructor() { }
 

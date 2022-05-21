@@ -30,7 +30,6 @@ export class ValidateCpfComponent implements OnInit {
 
   clicked() {
     this.person = data.filter((d) => this.removeMask(d.cpf) == this.form.value.cpf)[0]
-    console.log(this.person)
   }
 
   removeMask(cpfNumber: string):string {

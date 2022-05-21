@@ -19,4 +19,4 @@
     </form>
 </div>
 
-<als-information></als-information>
+<als-information *ngIf="person.id > 0" [person]="person"></als-information>
