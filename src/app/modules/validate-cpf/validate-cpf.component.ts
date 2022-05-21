@@ -5,10 +5,10 @@ import data from 'src/app/data.json'
 
 @Component({
   selector: 'als-validate-cpf',
-  templateUrl: './als-validate-cpf.component.html',
-  styleUrls: ['./als-validate-cpf.component.css']
+  templateUrl: './validate-cpf.component.html',
+  styleUrls: ['./validate-cpf.component.css']
 })
-export class AlsValidateCpfComponent implements OnInit {
+export class ValidateCpfComponent implements OnInit {
 
   form: FormGroup;
   validCpf: boolean = false;

@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AlsMenuComponent } from './als-menu.component';
+import { ValidateCpfComponent } from './validate-cpf.component';
 
-describe('AlsMenuComponent', () => {
-  let component: AlsMenuComponent;
-  let fixture: ComponentFixture<AlsMenuComponent>;
+describe('ValidateCpfComponent', () => {
+  let component: ValidateCpfComponent;
+  let fixture: ComponentFixture<ValidateCpfComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AlsMenuComponent ]
+      declarations: [ ValidateCpfComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AlsMenuComponent);
+    fixture = TestBed.createComponent(ValidateCpfComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

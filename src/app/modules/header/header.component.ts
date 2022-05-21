@@ -2,10 +2,10 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'als-header',
-  templateUrl: './als-header.component.html',
-  styleUrls: ['./als-header.component.css']
+  templateUrl: './header.component.html',
+  styleUrls: ['./header.component.css']
 })
-export class AlsHeaderComponent implements OnInit {
+export class HeaderComponent implements OnInit {
 
   constructor() { }
 

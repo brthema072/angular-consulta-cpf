@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ShowInformationComponent } from './modules/show-information/show-information.component';
-import { AlsValidateCpfComponent } from './modules/validate-cpf/als-validate-cpf.component';
+import { ValidateCpfComponent } from './modules/validate-cpf/validate-cpf.component';
 
 const routes: Routes = [
   {
@@ -11,7 +11,7 @@ const routes: Routes = [
   },
   {
     path: 'validate-cpf',
-    component: AlsValidateCpfComponent
+    component: ValidateCpfComponent
   },
   {
     path: 'show-information',
@@ -19,7 +19,7 @@ const routes: Routes = [
   },
   {
     path: '**',
-    component: AlsValidateCpfComponent
+    component: ValidateCpfComponent
   }
 ];
 

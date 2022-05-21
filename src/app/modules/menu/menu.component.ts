@@ -2,10 +2,10 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'als-menu',
-  templateUrl: './als-menu.component.html',
-  styleUrls: ['./als-menu.component.css']
+  templateUrl: './menu.component.html',
+  styleUrls: ['./menu.component.css']
 })
-export class AlsMenuComponent implements OnInit {
+export class MenuComponent implements OnInit {
 
   isOpenMenu: boolean = false;
   menuImage: string = "assets/images/logo.png"

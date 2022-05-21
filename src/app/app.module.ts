@@ -4,9 +4,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SecondaryButtonComponent } from './shared/components/secondary-button/secondary-button.component';
-import { AlsHeaderComponent } from './modules/header/als-header.component';
-import { AlsMenuComponent } from './modules/menu/als-menu.component';
-import { AlsValidateCpfComponent } from './modules/validate-cpf/als-validate-cpf.component';
+import { HeaderComponent } from './modules/header/header.component';
+import { MenuComponent } from './modules/menu/menu.component';
+import { ValidateCpfComponent } from './modules/validate-cpf/validate-cpf.component';
 import { NgxMaskModule } from 'ngx-mask';
 import { PrimaryButtonComponent } from './shared/components/primary-button/primary-button.component';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -17,10 +17,10 @@ import { ShowInformationComponent } from './modules/show-information/show-inform
 @NgModule({
   declarations: [
     AppComponent,
-    AlsHeaderComponent,
+    HeaderComponent,
     SecondaryButtonComponent,
-    AlsMenuComponent,
-    AlsValidateCpfComponent,
+    MenuComponent,
+    ValidateCpfComponent,
     PrimaryButtonComponent,
     TimelineComponent,
     FooterComponent,
