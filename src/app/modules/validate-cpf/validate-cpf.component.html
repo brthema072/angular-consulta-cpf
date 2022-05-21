@@ -14,7 +14,7 @@
                     CPF inválido
                 </small>
             </div>
-            <als-primary-button text="Consultar por CPF" (clicked)="clicked()"></als-primary-button>
+            <als-primary-button text="Consultar por CPF" (clicked)="clicked()" [disabled]="person.id > 0"></als-primary-button>
         </div>
     </form>
 </div>

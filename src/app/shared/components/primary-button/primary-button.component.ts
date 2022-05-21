@@ -8,6 +8,7 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 export class PrimaryButtonComponent implements OnInit {
 
   @Input() text: string = "";
+  @Input() disabled: boolean = false;
   @Output() clicked: EventEmitter<any> = new EventEmitter();
 
   constructor() { }
@@ -16,7 +17,9 @@ export class PrimaryButtonComponent implements OnInit {
   }
 
   emitClick() {
-    this.clicked.emit()
+    if(!this.disabled){
+      this.clicked.emit()
+    }
   }
 
 }

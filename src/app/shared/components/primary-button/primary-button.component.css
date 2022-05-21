@@ -19,3 +19,9 @@
     color: white;
     transition: all 0.6s;
 }
+
+.disabled-button {
+    cursor: not-allowed !important;
+    background-color: #a2bdca;
+    border: 1px solid transparent;
+}
