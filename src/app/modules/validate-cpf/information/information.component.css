@@ -59,4 +59,5 @@
 .redirect-link {
     color: #165C7D;
     font-weight: 700;
+    cursor: pointer;
 }
