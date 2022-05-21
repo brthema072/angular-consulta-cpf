@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { CpfValidation } from 'src/app/base/configurations/cpf-validation';
 import { Person } from 'src/app/base/models/person';
@@ -10,6 +10,8 @@ import data from 'src/app/data.json'
   styleUrls: ['./validate-cpf.component.css']
 })
 export class ValidateCpfComponent implements OnInit {
+
+  @ViewChild('modal') modal: any;
 
   form: FormGroup;
   validCpf: boolean = false;
@@ -30,6 +32,17 @@ export class ValidateCpfComponent implements OnInit {
 
   clicked() {
     this.person = data.filter((d) => this.removeMask(d.cpf) == this.form.value.cpf)[0]
+    this.checkPerson()
+  }
+
+  checkPerson(){
+    if(this.person == undefined && this.form.valid){
+      this.modal.setMessage("CPF não encontrado")
+      this.modal.toggle()
+    } else if(this.person == undefined && this.form.invalid){
+      this.modal.setMessage("Informe um CPF válido")
+      this.modal.toggle()
+    }
   }
 
   removeMask(cpfNumber: string):string {

@@ -1,0 +1,19 @@
+<ng-container *ngIf="show">
+    <div class="modal">
+        <div class="header">
+            <span class="material-symbols-outlined" (click)="toggle()">
+                close
+            </span>
+        </div>
+
+        <div class="body">
+            <span class="material-symbols-outlined">
+                error
+            </span>
+            <span class="message">
+                {{ message }}
+            </span>
+        </div>
+    </div>
+    <div class="overlay"></div>
+</ng-container>

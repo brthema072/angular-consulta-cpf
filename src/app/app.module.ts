@@ -13,6 +13,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { TimelineComponent } from './shared/components/timeline/timeline.component';
 import { FooterComponent } from './modules/footer/footer.component';
 import { InformationComponent } from './modules/validate-cpf/information/information.component';
+import { ModalComponent } from './shared/components/modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { InformationComponent } from './modules/validate-cpf/information/informa
     PrimaryButtonComponent,
     TimelineComponent,
     FooterComponent,
-    InformationComponent
+    InformationComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,
