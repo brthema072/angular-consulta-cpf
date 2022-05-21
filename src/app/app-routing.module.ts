@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ShowInformationComponent } from './modules/show-information/show-information.component';
+import { ValidateCpfComponent } from './modules/validate-cpf/validate-cpf.component';
 
 const routes: Routes = [
   {
@@ -10,11 +10,11 @@ const routes: Routes = [
   },
   {
     path: 'validate-cpf',
-    component: ShowInformationComponent
+    component: ValidateCpfComponent
   },
   {
     path: '**',
-    component: ShowInformationComponent
+    component: ValidateCpfComponent
   }
 ];
 

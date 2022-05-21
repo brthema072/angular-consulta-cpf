@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
-import { CpfValidation } from 'src/app/configurations/cpf-validation';
+import { CpfValidation } from 'src/app/base/configurations/cpf-validation';
+import { Person } from 'src/app/base/models/person';
 import data from 'src/app/data.json'
 
 @Component({
@@ -12,6 +13,8 @@ export class ValidateCpfComponent implements OnInit {
 
   form: FormGroup;
   validCpf: boolean = false;
+
+  person: Person = new Person();
 
   constructor(public validatio: CpfValidation) { }
 
@@ -26,7 +29,8 @@ export class ValidateCpfComponent implements OnInit {
   }
 
   clicked() {
-    let person = data.filter((d) => this.removeMask(d.cpf) == this.form.value.cpf)
+    this.person = data.filter((d) => this.removeMask(d.cpf) == this.form.value.cpf)[0]
+    console.log(this.person)
   }
 
   removeMask(cpfNumber: string):string {
