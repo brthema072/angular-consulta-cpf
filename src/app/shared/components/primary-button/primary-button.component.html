@@ -1,3 +1,4 @@
-<div [ngClass]="{ 'container': true, 'disabled-button': disabled }" (click)="emitClick()" tabindex="0" (keydown.enter)="emitClick()">
+<div [ngClass]="{ 'container': true, 'disabled-button': disabled }" (click)="emitClick()" tabindex="0" (keydown.enter)="emitClick()"
+    [ngStyle]="dimensions">
     <span class="text">{{ text }}</span>
 </div>

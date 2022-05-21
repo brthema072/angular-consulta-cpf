@@ -12,12 +12,12 @@ export class SecondaryButtonComponent implements OnInit {
   @Input() width: number = 134;
   @Input() height: number = 32;
    
-  dimensoes: {};
+  dimensions: {};
 
   constructor() { }
 
   ngOnInit(): void {
-    this.dimensoes = {
+    this.dimensions = {
       'height': this.height + 'px',
       'width': this.width.toString().indexOf('%') > -1 ? this.width : this.width + 'px'
     };
